@@ -7,3 +7,11 @@ Javascript assignments
 
 - **Summery Of Page** : This is an assignment 1 based on javascript language.In this assignment various concept is used like global object with it's method ,varible type ,data type and template string respectivity
 - **Language Used** : HTML 5, JS
+
+
+## **Assignment 2** ##
+
+## Information About Assignment 2 ##
+
+- **Summery Of Page** : This is an assignment 2 based on javascript language.In this assignment various concept is used like conditional statement.
+- **Language Used** : HTML 5, JS
