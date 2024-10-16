@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <div>
+        <h1>Program 1 : Temperature Converter</h1>
+    </div>
+    <script type="text/Javascript">
+        const temperature = prompt('Enter a temperature');
+        const unit = prompt('Enter a unit (C or F)');
+        let output;
+        if(unit=='C'){
+                const result = parseFloat(temperature*(9/5))+parseFloat(32);
+                console.log(result);
+                if(isNaN(result)){
+                    output = 'Please enter vaild Temperature';
+                }else{
+                    output = result+' °F';
+                }
+            }else if(unit=='F'){
+                const result = (temperature - 32) * 5/9;
+                if(isNaN(result)){
+                    output = 'Please enter vaild Temperature';
+                }else{
+                    output = result+' °C';
+                }
+            }else{
+                output = 'Proper unit required';
+            }
+        
+        alert(output);
+        
+    </script>
+</body>
+</html>

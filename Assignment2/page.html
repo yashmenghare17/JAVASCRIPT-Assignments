@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <div>
+        <h1>Program 2 : Grade Calculator</h1>
+    </div>
+    <script type="text/Javascript">
+        const score = prompt('Enter a score (1-100)');
+        let output;
+        let Grade;
+        if(score >= 90 && score <= 100){
+            Grade = 'A';
+        }else if(score >= 80 && score <= 89){
+            Grade = 'B';
+        }
+        else if(score >= 70 && score <= 79){
+            Grade = 'C';
+        }
+        else if(score >= 60 && score <= 69){
+            Grade = 'D';
+        }
+        else if(score >= 0 && score <= 59){
+            Grade = 'F';
+        }else{
+            Grade = '';
+        }
+        if(Grade!=''){
+            output = `Your grade is ${Grade}`;
+        }else{
+            output = "You entered data is inavalid or not match with any grade";
+        }
+        alert(output);
+        
+    </script>
+</body>
+</html>
