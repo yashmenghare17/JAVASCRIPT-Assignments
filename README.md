@@ -29,3 +29,11 @@ Javascript assignments
 
 - **Summery Of Page** : This is an assignment 4 based on javascript language.In this assignment various concept is used like DOM.Using DOM manupulation we create program of traffic signal animation. 
 - **Language Used** : HTML 5, JS
+
+![Output1 Page Screen Shot](./Assignment4/images/Screenshot%202024-10-18%20081224.png)
+
+![Output2 Page Screen Shot](./Assignment4/images/Screenshot%202024-10-18%20081232.png)
+
+![Output3 Page Screen Shot](./Assignment4/images/Screenshot%202024-10-18%20081240.png)
+
+![Output4 Page Screen Shot](./Assignment4/images/Screenshot%202024-10-18%20081248.png)
