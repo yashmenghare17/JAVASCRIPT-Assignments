@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Traffic Light Animation</title> 
+    <style> 
+        body { 
+            
+            background-color: #f0f0f0; 
+            width: 100%;
+        } 
+        .container{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+        }
+        .traffic-signal { 
+            width: 100px; 
+            height: 300px; 
+            background-color: #333; 
+            border-radius: 10px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            align-items: center; 
+        } 
+  
+        .light { 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            margin: 10px; 
+            border: 1px solid;
+        } 
+        .red { 
+            background-color: red; 
+            
+        } 
+        .btn{
+            width:80px;
+            padding:10px;
+            border-radius: 20px;
+            color: #1f1f14;
+            border:1px solid #999966;
+            cursor: pointer;
+        }
+    </style> 
+</head> 
+  
+<body> 
+    <div class="container">
+        <div class="traffic-signal"> 
+            <div class="light" id="red"></div> 
+            <div class="light" id="yellow"></div> 
+            <div class="light" id="green"></div> 
+        </div>
+        <div style="margin-left: 10px;">
+            <button class="btn" onclick="signal('stop')" id="stop">Stop</button>
+            <button class="btn" onclick="signal('wait')" id="wait">Wait</button>
+            <button class="btn" onclick="signal('go')" id="go">Go</button>
+            <button class="btn" onclick="signal('reset')" id="reset">Reset</button>
+        </div>
+    </div>
+    <script>
+        function signal(type){
+            const indicator1 = document.getElementById('red').style;
+            const indicator2 = document.getElementById('yellow').style;
+            const indicator3 = document.getElementById('green').style;
+            const button1 = document.getElementById('stop').style;
+            const button2 = document.getElementById('wait').style;
+            const button3 = document.getElementById('go').style;
+            indicator1.backgroundColor = indicator2.backgroundColor = indicator3.backgroundColor  = '#333';
+            button1.backgroundColor = button2.backgroundColor = button3.backgroundColor  = '';
+            button1.color = button2.color = button3.color  = 'black';
+            if(type=='reset'){
+                return false;
+            }
+            if(type=='stop'){
+                indicator1.backgroundColor = 'red';
+                button1.color='#fff';
+                button1.backgroundColor = 'red';
+               
+            }else if(type=='wait'){
+                indicator2.backgroundColor ='yellow';
+                button2.backgroundColor = 'yellow';
+                button2.color='#fff';
+            }else{
+                indicator3.backgroundColor ='green';
+                button3.backgroundColor = 'green';
+                button3.color='#fff';
+            }
+        }
+    </script>
+</body> 
+  
+</html>

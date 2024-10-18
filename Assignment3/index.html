@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h1>DOM Manupulation</h1>
+    <h2>Sum Of Two Numbers</h2>
+    <div>
+        Number 1  : <input type="text"  id="number1"/><br/>
+        Number 2  : <input type="text"  id="number2"/>
+    </div>
+    <div id="output">
+    </div>
+    <button onclick="sumOfTwoNumber()">Sum</button>
+    <button onclick="sumOfTwoNumber('clear')">Clear</button>
+    <script type="text/javascript">
+        function sumOfTwoNumber(type=''){
+            if(type=='clear'){
+                document.getElementById('number1').value = '';
+                document.getElementById('number2').value = '';
+                document.getElementById('output').innerText =  '';
+                return false;
+            }
+            const number1 = document.getElementById('number1').value;
+            const number2 = document.getElementById('number2').value;
+            const sum = parseInt(number1) + parseInt(number2);
+            const output = document.getElementById('output').innerText = sum;
+        }
+    </script>
+</body>
+</html>

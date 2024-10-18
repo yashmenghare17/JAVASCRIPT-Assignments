@@ -15,3 +15,17 @@ Javascript assignments
 
 - **Summery Of Page** : This is an assignment 2 based on javascript language.In this assignment various concept is used like conditional statement.
 - **Language Used** : HTML 5, JS
+
+## **Assignment 3** ##
+
+## Information About Assignment 3 ##
+
+- **Summery Of Page** : This is an assignment 3 based on javascript language.In this assignment various concept is used like DOM.Using DOM manupulation we create program of addition of two numbers. 
+- **Language Used** : HTML 5, JS
+
+## **Assignment 4** ##
+
+## Information About Assignment 4 ##
+
+- **Summery Of Page** : This is an assignment 4 based on javascript language.In this assignment various concept is used like DOM.Using DOM manupulation we create program of traffic signal animation. 
+- **Language Used** : HTML 5, JS
