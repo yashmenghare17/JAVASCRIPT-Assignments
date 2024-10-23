@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <style>
+        .container{
+            margin:0px auto;
+            width: 500px;
+            text-align: center;
+        }
+        .card{
+            width: 250px;
+            height: 250px;
+            margin:0px auto;
+            padding:10px 15px;
+            
+        }
+        .orderdiv{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .btn{
+            padding:3px;
+            width: 25px;
+            background-color: lightblue;
+            border: 1px solid lightblue;
+            cursor: pointer;
+        }
+        .btn:hover{
+            box-shadow: 1px 1px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Increment/Decrement Feature</h1>
+        <div class="card">
+            <img src="./samosa.jpg"  width="170px" height="150px"/>
+            <div class="orderdiv">
+                <div><button class="btn" onclick="counter('add')">+</button></div>
+                <div style="margin-left: 10px;margin-right: 10px;">Quantity : <span id="appendQty">0</span> </div>
+                <input type="hidden" value="0" id="qty"/>
+                <div><button class="btn" onclick="counter('remove')">-</button></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function counter(flag){
+            const quantity = document.getElementById('qty');
+            let order_qty = quantity.value;
+            if(flag=='add'){
+                order_qty++;
+            }else if(flag=='remove'){
+                if(order_qty > 0){
+                    order_qty--; 
+                }
+                
+            }
+            quantity.value = order_qty;
+            document.getElementById('appendQty').innerHTML = order_qty;
+        
+        }
+    </script>
+</body>
+</html>

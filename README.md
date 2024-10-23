@@ -52,5 +52,16 @@ Javascript assignments
 ## Information About Assignment 6 ##
 
 - **Summery Of Page** : This is an assignment 6 based on javascript language.In this assignment various concept is used like Text Opration.
-- **Language Used** : HTML 5, JS.
+- **Language Used** : HTML 5,CSS, JS.
 - **Page Link** : https://dummytextmanipulator.netlify.app/
+
+## **Assignment 7** ##
+
+## Information About Assignment 7 ##
+
+- **Summery Of Page** : This is an assignment 7 based on javascript language.In this assignment various concept is used like Events and DOM manipulation.
+- **Language Used** : HTML 5,CSS, JS.
+
+![Output1 Page Screen Shot](./Assignment7/Screeenshots/Screenshot%202024-10-23%20082735.png)
+
+![Output2 Page Screen Shot](./Assignment7/Screeenshots/Screenshot%202024-10-23%20082756.png)
