@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Preview</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+    }
+    .sub-container{
+        width: 600px;
+        margin: 2px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-img-container{
+        border: 3px solid gray;
+        padding:5px 10px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+    .thumb-img-container{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <h1>Product Preview</h1>
+            <div class="main-img-container">
+                <img src="./img/img1.jpg" width="250px" height="250px" alt="img1" id="main-img"/>
+            </div>
+            <div>
+                <img src="./img/img1.jpg" class="thumb-img-container" alt="img1" onmouseover="preview('img1')" />
+                <img src="./img/img2.jpg" class="thumb-img-container" alt="img2" onmouseover="preview('img2')" />
+                <img src="./img/img3.jpg" class="thumb-img-container" alt="img3" onmouseover="preview('img3')" />
+                <img src="./img/img4.jpg" class="thumb-img-container" alt="img4" onmouseover="preview('img4')" />
+                <img src="./img/img5.jpg" class="thumb-img-container" alt="img5" onmouseover="preview('img5')" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function preview(img){
+            document.getElementById('main-img').src = './img/'+img+'.jpg';
+            document.getElementById('main-img').alt = img;
+        }
+
+    </script>
+</body>
+</html>
