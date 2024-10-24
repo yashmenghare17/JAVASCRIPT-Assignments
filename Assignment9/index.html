@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math functions</title>
+</head>
+<body>
+    <h1>Math functions</h1>
+    <ul>
+        <li>toFixed</li>
+        <li>floor</li>
+        <li>celling</li>
+        <li>round</li>
+        <li>min</li>
+        <li>max</li>
+        <li>sqrt</li>
+        <li>power</li>
+        <li>random</li>
+    </ul>
+    <script>
+        const number1 = 12.44444444444;
+        console.log(number1.toFixed(2),'toFixed'); // fixed number after decimal point.
+        const number2 = 12.44444444444;
+        console.log(Math.floor(number2),'floor'); //small nearest number
+        const number3 = 12.44444444444;
+        console.log(Math.ceil(number3),'ceil'); // largest nearest number
+        const number4 = 12.44444444444;
+        console.log(number4.toFixed(2),'round'); // round the number after equal 5 it work as celi ,before 5 work as floor
+        console.log(Math.min(1,2,3,4),'min'); // return min number
+        console.log(Math.max(1,2,3,4),'max'); // return max number
+        const number5 = 49;
+        console.log(Math.sqrt(number5),'squrt'); // return sqrt of value
+        console.log(Math.pow(2,8),'power'); // return value according to power .first is base and second parmater is power
+        console.log(Math.random(),'random'); // random value start 0< random >1
+    </script>
+</body>
+</html>

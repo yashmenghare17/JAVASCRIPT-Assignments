@@ -55,6 +55,7 @@ Javascript assignments
 - **Language Used** : HTML 5,CSS, JS.
 - **Page Link** : https://dummytextmanipulator.netlify.app/
 
+
 ## **Assignment 7** ##
 
 ## Information About Assignment 7 ##
@@ -65,3 +66,36 @@ Javascript assignments
 ![Output1 Page Screen Shot](./Assignment7/Screeenshots/Screenshot%202024-10-23%20082735.png)
 
 ![Output2 Page Screen Shot](./Assignment7/Screeenshots/Screenshot%202024-10-23%20082756.png)
+
+
+## **Assignment 8** ##
+
+## Information About Assignment 8 ##
+
+- **Summery Of Page** : This is an assignment 8 based on javascript language.In this assignment various concept is used like DOM manipulation.
+And using this we create product design preview.
+- **Language Used** : HTML 5,CSS, JS.
+- **Page Link** : : https://dummyproductpreview1.netlify.app
+
+
+## **Assignment 9** ##
+
+## Information About Assignment 9 ##
+
+- **Summery Of Page** : This is an assignment 9 based on javascript language.In this assignment various concept is used like math functions.
+- **Language Used** : HTML 5,JS.
+
+![Output Page Screen Shot](./Assignment9/screenshots/Screenshot%202024-10-24%20222258.png)
+
+
+## **Assignment 10** ##
+
+## Information About Assignment 10 ##
+
+- **Summery Of Page** : This is an assignment 10 based on javascript language.In this assignment various concept is used like DOM manipulation,Math functions etc.And using this we create dice roller.
+- **Language Used** : HTML 5,CSS, JS.
+- **Page Link** : : https://dummyproductpreview1.netlify.app
+
+
+
+
