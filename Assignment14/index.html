@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assginment 14</title>
+</head>
+<style>
+    #friendList{
+        width: 300px;
+    }
+    .card{
+        width: 100%;
+        background-color: burlywood;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid burlywood;
+        color: white;
+        margin-bottom: 20px;
+
+    }
+    .btn{
+        background-color: burlywood;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 1px solid burlywood;
+        color: white;
+        cursor: pointer;
+    }
+    #search{
+        padding:5px 10px;border-radius: 10px;border: 1px solid burlywood;width: 100%;
+    }
+
+</style>
+<body>
+    <h1>Friend Book</h1>
+    <div id="friendList">
+        <div style="margin-bottom: 20px;">
+            <button class="btn" onclick="oprationFriend('add')">Add Friend</button>
+            <button class="btn" onclick="oprationFriend('delete')">Delete Friend</button>
+            <button class="btn" onclick="reload()">Reload List</button>
+        </div>
+        <div style="margin-bottom: 20px;width: 100%;">
+            <input type="text" id="search" placeholder="Search friend add or delete" />
+        </div>
+        <div id="friendListData">
+            <div class="card">No Data</div>
+        </div>
+        
+    </div>
+    <script type="text/javascript">
+        let friend_list = [];
+        let input_sreach = document.getElementById('search');
+        function oprationFriend(type){
+            let value = input_sreach.value;
+            let message;
+            if(type=='delete'){
+                message = `Want to delete ${value} in your friend list ?`;
+            }else{
+                message = `Want to add ${value} in your friend list ?`;   
+            }
+            if(value!=''){
+                if(confirm(message)){
+                    if(type=='delete'){
+                        let index = friend_list.indexOf(value);
+                        if(index!=-1){
+                            friend_list.splice(index,1);
+                        }else{
+                            alert('No friend found');
+                        }
+                        
+                    }else{
+
+                        friend_list.push(value);
+                    }
+                    
+                }
+                reload();
+            }else{
+                alert('Please enter data in search for add or delete in list');
+            }
+        }
+        function reload(){
+            var textfriendlist = document.getElementById('friendListData');
+            if(friend_list.length > 0)
+            {
+                textfriendlist.innerHTML='';
+                friend_list.sort();
+                let a = 1;
+                const emoji = ['😊','😂','🤣','😍','😒','😁','👍'];
+                const min =1;
+                const max= 7;
+                let randomindex = Math.floor(Math.random()*(max-min))+min;
+                for(let i=0;i<friend_list.length;i++){
+                    textfriendlist.innerHTML += `<div class="card">${a}) ${friend_list[i]} ${emoji[randomindex]}</div>`;
+                    a++;
+                }   
+            }else{
+                textfriendlist.innerHTML = `<div class="card">Not Data</div>`;
+            }
+            input_sreach.value='';  
+        }
+    </script>
+</body>
+</html>

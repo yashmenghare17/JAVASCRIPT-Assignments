@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12</title>
+</head>
+<body>
+    <h1>Array : collection of values and its an hetrogenus array i.e array content difrent data type value</h1>
+    <script type="text/javascript">
+        const students = ['yash','aniket','sagar','harshal'];
+        // to get a value of perticular index value
+        console.log(students[1],'to get a value of perticular index value');
+        students[1] = 'Akashay';
+        console.log(students[1],'to update a value of perticular index value');
+        console.log(students,'array with its index');
+        console.log(students.length,'length property');
+        console.log(students.push('Gulshan'),'push is method to add a value in array form its end');
+        console.log(students,'array with its index');
+        console.log(students.pop(),'pop is method to remove a value in array form its end');
+        console.log(students,'array with its index');
+        console.log(students.unshift('Plash'),'unshift is method to add a value in array form its start with chnage the index');
+        console.log(students,'array with its index');
+        console.log(students.shift(),'shift is method to remove a value in array form its start with change the index');
+        console.log(students,'array with its index');
+        console.log(students.splice(1,3,'yash'),'splice is method to delete a value in array form its perticular index with new value');
+        console.log(students,'array with its index splice');
+        console.log(students.splice(1,0,'ram'),'if you want not delete that value pass 0 in second paramter');
+        console.log(students,'array with its index');
+        console.log(students.slice(2,3),'slice method');
+        console.log(students,'array with its index');
+        console.log(students.includes('harshal'),'include method is used to check wether the value is present or not if present return true else return false');
+        console.log(students.indexOf('harshal'),'index method is used to check wether the index is present or not if present return index else return -1');
+        console.log(students,'array with its index');
+        console.log(students.sort(),'sort method are used to sort i.e make array value asecending to descending order');
+        console.log(students,'array with its index');
+        console.log(students.reverse(),'revser method are used to resverse the array');
+        console.log(students,'array with its index');
+        console.log(students.join(),'convert an array into string');
+        console.log(students,'array with its index');
+        console.log(students.join('*'),'convert an array into string with perticular sperator default comma');
+        console.log(students,'array with its index');
+    </script>
+</body>
+</html>
