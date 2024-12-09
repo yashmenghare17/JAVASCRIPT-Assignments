@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+</head>
+<body>
+    <div style="display: flex;align-items: center; flex-direction: column;">
+        <h1>Phone Book</h1>
+        <div>
+            <input id="search" placeholder="Search name...." style="border-radius: 20px;padding: 8px;" />
+            <button onclick="Search()" style="padding: 8px;background-color: brown; color: white;border-radius: 20px;border: 1px solid white;">Search</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script>
+        const phoneBook = {
+            yash:1234567890,
+            sopan:1234567891,
+            pranav:1234567892,
+            harshal:1234567893,
+            amit:1234567894,
+            sanjay:1234567895
+        }
+        function Search(){
+            const query = document.getElementById('search').value.toLowerCase();
+            const mobile = phoneBook[query];
+            let result ='Contact not found';
+            if(mobile){
+                result = `${query} contact number is <b>${phoneBook[query]}</b>`;
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
