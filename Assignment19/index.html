@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Meet</title>
+</head>
+<style>
+    .card{
+        width: 200px;
+        text-align: center;
+        margin-bottom: 10px;
+        background-color: brown;
+        padding:15px;
+        border: 1px solid white;
+        border-radius: 20px;
+        color: white;
+    }
+</style>
+<body>
+    <div style="display: flex;align-items: center; flex-direction: column;">
+        <h1>Google Meet</h1>
+        <input id="search-user" placeholder="Search here ..." onkeyup="searchUser()"/><br/>
+        <div id="render-user-list-container">
+        </div>
+    </div>
+    <script>
+        const renderList = document.getElementById('render-user-list-container');
+        const userList = [
+                {
+                    name:'yash',
+                    age:22,
+                    city:"Pune"
+                },
+                {
+                    name:'sopan',
+                    age:23,
+                    city:"Nagpur"
+                },
+                {
+                    name:'sanket',
+                    age:24,
+                    city:"Mumbai"
+                },
+                {
+                    name:'sanjay',
+                    age:25,
+                    city:"Amravati"
+                },
+                {
+                    name:'daeshan',
+                    age:26,
+                    city:"Delhi"
+                },
+            ];
+        renderUserList();
+        function renderUserList(){
+            userList.forEach((item)=>{
+                renderList.innerHTML += `<div class="card">${item.name}</div>`;
+            });
+        }
+        function searchUser(){
+            const userData = document.getElementById('search-user').value;
+            renderList.innerHTML='';
+            const searchData = userList.filter((item)=>{
+                if(item.name.includes(userData)){
+                    renderList.innerHTML += `<div class="card">${item.name}</div>`;
+                }
+            });
+        }
+        
+    </script>
+</body>
+</html>
