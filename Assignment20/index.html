@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #side-bar{
+        width: 200px;
+        height: 100vh;
+        background-color:gainsboro;
+        border:1px solid gainsboro;
+        box-shadow:0px 0px 15px;
+        visibility: hidden;
+    }
+    .menu-item{
+        margin:20px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    .menu-item:hover{
+         border-bottom:1px solid;
+         padding-bottom: 5px;
+         font-size: 20px;
+         font-weight: bold;
+    }
+    .menu-cross{
+        margin:20px;
+        text-align: right;
+        cursor: pointer;
+    }
+    #hamberger{
+        
+        visibility: visible;
+        cursor: pointer;
+        position:fixed;
+        top: 10px;
+        left: 10px;
+    }
+</style>
+<body>
+    <div id="container">
+        <div onclick="hamberger()" id="hamberger"><i class="fa-solid fa-bars" ></i></div>
+        <div id="side-bar">
+            <div class="menu-cross" onclick="hamberger()"><i class="fa-solid fa-xmark"></i></div>
+            <div class="menu-item"><i class="fa-solid fa-home" ></i>&nbsp;Home</div>
+            <div class="menu-item"><i class="fa-solid fa-circle-info" ></i>&nbsp;About Us</div>
+            <div class="menu-item"><i class="fa-solid fa-phone" ></i>&nbsp;Contact Us</div>
+            <div class="menu-item"><i class="fa-solid fa-image" ></i>&nbsp;Gallery</div>
+            <div class="menu-item"><i class="fa-solid fa-user" ></i>&nbsp;Testimonial</div>
+            <div class="menu-item"><i class="fa-solid fa-gear" ></i>&nbsp;Setting</div>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/dafc6aea8f.js" crossorigin="anonymous"></script>
+    <script>
+        function hamberger(){
+            const hamberger = document.getElementById('hamberger');
+            const sideBar = document.getElementById('side-bar');
+            if(hamberger.style.visibility=='visible'){
+                sideBar.style.visibility='visible';
+                hamberger.style.visibility ='hidden';
+            }else{
+                sideBar.style.visibility='hidden';
+                hamberger.style.visibility ='visible';
+            }
+        }
+    </script>
+</body>
+</html>
